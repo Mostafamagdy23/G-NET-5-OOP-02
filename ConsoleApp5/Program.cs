@@ -1,4 +1,11 @@
-﻿namespace ConsoleApp5
+﻿using System;
+using System.ComponentModel;
+using System.Diagnostics;
+using System.Reflection.Metadata;
+using static System.Formats.Asn1.AsnWriter;
+using static System.Reflection.Metadata.BlobBuilder;
+
+namespace ConsoleApp5
 {
     internal class Program
     {
@@ -20,6 +27,17 @@
             //    - Increases coupling and risk of inconsistent/invalid object state.
 
             #endregion
-        }
+
+
+            #region Question02
+         // Q02: Field vs Property
+        //---------------------- -
+       //-Difference: A field is just a variable to store data. A property is like a wrapper around a field that uses 'get' and 'set' blocks to manage how the data is handled.
+      //-Can it contain logic?: Yes, properties can have logic inside them
+     //- Example of read - only calculated property
+    //  public double TotalPrice => Quantity * Price;
+
+        #endregion
+    }
     }
 }
