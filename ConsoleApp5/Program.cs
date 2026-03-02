@@ -30,14 +30,30 @@ namespace ConsoleApp5
 
 
             #region Question02
-         // Q02: Field vs Property
-        //---------------------- -
-       //-Difference: A field is just a variable to store data. A property is like a wrapper around a field that uses 'get' and 'set' blocks to manage how the data is handled.
-      //-Can it contain logic?: Yes, properties can have logic inside them
-     //- Example of read - only calculated property
-    //  public double TotalPrice => Quantity * Price;
+            // Q02: Field vs Property
+            //---------------------- -
+            //-Difference: A field is just a variable to store data. A property is like a wrapper around a field that uses 'get' and 'set' blocks to manage how the data is handled.
+            //-Can it contain logic?: Yes, properties can have logic inside them
+            //- Example of read - only calculated property
+            //  public double TotalPrice => Quantity * Price;
 
-        #endregion
-    }
+            #endregion
+
+
+            #region Question03
+
+            // Q3: Indexers
+            // a) 'this[int index]' is an indexer. It lets an object be used like an array
+            //    (e.g., register[0]) to get/set internal elements.
+            // b) 'register[10] = "Ali";' will throw IndexOutOfRangeException (array size is 5).
+            //    Make it safer by checking bounds in get/set; either return null / ignore set,
+            //    or throw a friendly exception message.
+            // c) Multiple indexers? Yes—by changing the parameter list (overloads).
+            //    Example: one by int (position) and another by string (key/name)
+
+
+
+            #endregion
+        }
     }
 }
