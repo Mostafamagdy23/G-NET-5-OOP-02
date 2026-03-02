@@ -51,7 +51,17 @@ namespace ConsoleApp5
             // c) Multiple indexers? Yes—by changing the parameter list (overloads).
             //    Example: one by int (position) and another by string (key/name)
 
+            #endregion
 
+
+
+            #region Question04
+
+            // Q4: static vs instance
+            // a) 'static' TotalOrders is shared by the class (one value for all orders).
+            //    'Item' is an instance field—each object has its own copy.
+            // b) A static method cannot access 'Item' directly because it has no instance ('this').
+            //    It must receive an Order instance as a parameter to read its Item.
 
             #endregion
         }
